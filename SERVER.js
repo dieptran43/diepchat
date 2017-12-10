@@ -7,7 +7,7 @@ app.set("views", "./views");
 var server = require("http").createServer(app);
 var io = require("socket.io")(server);
 
-server.listen(3000, "127.0.0.1");
+server.listen(process.env.PORT,3000");
 
 var mangUser =[];
 //khoi tao io lang nghe
