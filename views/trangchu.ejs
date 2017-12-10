@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="xuly.js"></script>
+        <link rel="stylesheet" href="layout.css" type="text/css">
+    </head>
+    <body>
+        <b>Hello day la trang chu</b>
+        <div id="noidung1"></div>
+        <div id="mrA">Click goi server!!</div>
+        <div id="mrA_owner" style="color:red"></div>
+        <div id="reBroadcast" style="color:blue"></div>
+        <div id="wrapper">
+            <div id="loginForm">
+                <h3>What's your name?</h3>
+                <input type="text" id="txtUserName"/>
+                <input type="button" value="Register" id="btnRegister">
+                <label id="lblMessage"></label>
+            </div>
+            <div id="chatForm">
+                <div id="left">
+                        <div id="boxTitle">User online</div>
+                        <div id="boxContent">
+                            <div class="userOnline">Teo Nguyen</div>
+                            <div class="userOnline">Teo Nguyen2</div>
+                            <div class="userOnline">Teo Nguyen3</div>
+                            <div class="userOnline">Teo Nguyen4</div>
+                        </div>
+                </div>
+                <div id="right">
+                    <div id="sayHi">
+                        Hello <span id="currentUser">Teo</span>
+                        <input type="button" id="btnLogout" value="Logout">
+                    </div>
+                    <div id="listMessages"></div>
+                    <div>
+                        <label id="lblTypping"></label>
+                        <input type="text" id="txtMessage">
+                        <input type="button" id="btnSendMessage" value="Send">
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+
+</html>
