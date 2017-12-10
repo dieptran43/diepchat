@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000");
+var socket = io("https://diepchat.herokuapp.com/");
 $(function(){
     $("#noidung1").html("Balala Anh Diep lam Nodejs");
     $("#mrA").click(function(){
